@@ -1,5 +1,5 @@
 function Vowels(name){
-    var vowelArr = [];
+    var vowelArr = [ ];
     var tempVow = name.replace(/[^aeiouAEIOU]/gi,"").split("");
     
     for(var i = 0; i < tempVow.length; i++){
@@ -9,6 +9,6 @@ function Vowels(name){
            vowelArr.push(tempVow[i].toLowerCase());
         }          
     }
-    return vowelArr;
+    return "Vowels: " + vowelArr.join(", ");
 }
-console.log(Vowels("Umuzi"))
+console.log(Vowels("Umuzi"));
